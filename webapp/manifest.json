@@ -8,6 +8,15 @@
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
+		"dataSources": {
+         "dataRemote": {
+               "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/",
+               "type": "OData",
+               "settings": {
+                 "odataVersion": "2.0"
+               }
+         }
+       },
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
 		"sourceTemplate": {
@@ -63,7 +72,10 @@
 				"settings": {
 					"bundleName": "list.i18n.i18n"
 				}
-			}
+			},
+			 "data": {
+               "dataSource": "dataRemote"
+         }
 		},
 		"resources": {
 			"css": [{
