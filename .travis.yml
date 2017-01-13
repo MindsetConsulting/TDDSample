@@ -1,7 +1,8 @@
 language: node_js
 node_js:
-  - 0.6
+  - node
 before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
-  - "phantomjs webapp/test/phantomjs-test.js"
+  - sleep 3 # give xvfb some time to start
+  - "phantomjs webapp/test/phantomjs-test.js"  

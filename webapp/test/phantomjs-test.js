@@ -1,7 +1,7 @@
 var fs = require('fs'),
 	system = require('system'),
 	page = require('webpage').create(),
-	file = fs.absolute((system.args.length > 1 && system.args[1]) || '/webapp/test/unit/unitTests.qunit.html');
+	file = fs.absolute((system.args.length > 1 && system.args[1]) || 'webapp/test/unit/unitTests.qunit.html');
 
 
 page.onConsoleMessage = function (msg) {
