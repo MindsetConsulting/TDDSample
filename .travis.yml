@@ -7,3 +7,7 @@ before_script:
   - sleep 3 # give xvfb some time to start
   - pwd 
   - "phantomjs webapp/test/phantomjs-test.js"  
+  addons:
+  browserstack:
+    username: "andyprier1"
+    access_key: "fJK5ps6VBd9tSgwU6dn9"
