@@ -3,12 +3,9 @@ node_js:
   - node
 before_script:
   - "export DISPLAY=:99.0"
-  - "npm install -g node-qunit-phantomjs"
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
-  - pwd
-  - "node-qunit-phantomjs  webapp/test/unit/unitTests.qunit.html"
-  addons:
-  browserstack:
-    username: "andyprier1"
-    access_key: "fJK5ps6VBd9tSgwU6dn9"
+install:
+  - npm install -g node-qunit-phantomjs
+script:
+  - "node-qunit-phantomjs webapp/test/unit/unitTests.qunit.html"
