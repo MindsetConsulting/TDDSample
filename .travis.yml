@@ -3,7 +3,7 @@ node_js:
   - node
 before_script:
   - "export DISPLAY=:99.0"
-  - npm install -g node-qunit-phantomjs
+  - "npm install -g node-qunit-phantomjs"
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
   - pwd
