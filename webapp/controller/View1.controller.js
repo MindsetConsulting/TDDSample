@@ -9,7 +9,7 @@ sap.ui.define([
 		formatter: formatter,
 	
 		onInit: function() {
-			//added comment
+			//added comment new
 			/*var oViewModel = new JSONModel({
 				tableBusyDelay: 0
 			});
